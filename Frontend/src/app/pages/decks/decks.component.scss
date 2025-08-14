@@ -1,0 +1,26 @@
+$gap: 1em;
+
+.decks {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+
+  .deckbuilder {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap;
+    flex: 1;
+  }
+
+  .deck {
+    flex: 0 0 calc(40% - (0.5 * $gap));
+    background-color: cyan; // Delete Later
+
+  }
+
+  .cards {
+    flex: 0 0 calc(60% - (0.5 * $gap));
+    background-color: yellow; // Delete Later
+  }
+}

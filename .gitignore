@@ -1,0 +1,38 @@
+# General
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+
+# Frontend
+*/node_modules
+*/dist
+*/tmp
+*/out-tsc
+*/.angular/cache
+*/coverage
+*/libpeerconnection.log
+*/testem.log
+*/typings
+*/.sass-cache/
+*/connect.lock
+
+# Backend
+*/node_modules
+*/dist
+*/tmp
+*/out-tsc
+*/coverage
+*/.sass-cache/
+*/connect.lock
