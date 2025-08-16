@@ -29,10 +29,26 @@ yarn-error.log*
 */connect.lock
 
 # Backend
-*/node_modules
-*/dist
-*/tmp
-*/out-tsc
-*/coverage
-*/.sass-cache/
-*/connect.lock
+
+## Build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+## Database files
+*.db
+*.sqlite
+*.db-shm
+*.db-wal
+
+## Images
+*/wwwroot
+!*/wwwroot.tar.gz
+!*/wwwroot.zip
+
+## Temporary files
+*.tmp
+.DS_Store
+Thumbs.db
