@@ -26,9 +26,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -62,6 +60,12 @@
             },
             "development": {
               "buildTarget": "Frontend:build:development"
+            },
+            "https": {
+              "ssl": true,
+              "sslCert": "ssl/localhost.pem",
+              "sslKey": "ssl/localhost-key.pem",
+              "buildTarget": "Frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,9 +84,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           }
         }
       }
