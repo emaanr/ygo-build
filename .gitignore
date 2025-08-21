@@ -1,8 +1,11 @@
 # General
+
+*.tmp
 .DS_Store
 Thumbs.db
 
 # IDEs and editors
+
 .idea/
 .project
 .classpath
@@ -12,10 +15,12 @@ Thumbs.db
 *.sublime-workspace
 
 # Logs
+
 npm-debug.log*
 yarn-error.log*
 
 # Frontend
+
 */node_modules
 */dist
 */tmp
@@ -30,25 +35,30 @@ yarn-error.log*
 
 # Backend
 
-## Build outputs
+appsettings.json
+
+## Build 
+
 bin/
 obj/
 *.dll
 *.exe
 *.pdb
 
-## Database files
+## Database
+
 *.db
 *.sqlite
 *.db-shm
 *.db-wal
 
 ## Images
+
 */wwwroot
 !*/wwwroot.tar.gz
 !*/wwwroot.zip
 
-## Temporary files
-*.tmp
-.DS_Store
-Thumbs.db
+# Scripts
+
+*.venv
+__pycache__
