@@ -4,7 +4,13 @@
 
 ### Frontend
 
-- Angular 19(.2.15)
+- Angular 20(.2.0)
+
+#### Node
+
+- Node 22(.18.0)
+- NPM 11(.5.2)
+- NPX 11(.5.2)
 
 ### Backend
 
