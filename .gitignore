@@ -4,7 +4,7 @@
 .DS_Store
 Thumbs.db
 
-# IDEs and editors
+# IDEs and Editors
 
 .idea/
 .vscode
@@ -33,12 +33,13 @@ yarn-error.log*
 */typings
 */.sass-cache/
 */connect.lock
+ssl
 
 # Backend
 
 appsettings.json
 
-## Build 
+## Build
 
 bin/
 obj/
