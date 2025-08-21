@@ -12,7 +12,7 @@
 
 ### Scripts
 
-- Pyton 13(.13.3)
+- Python 13(.13.3)
 
 ## Scope
 
