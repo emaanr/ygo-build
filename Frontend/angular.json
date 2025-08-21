@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ygo-build": {
+    "Frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,14 +15,9 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/ygo-build",
-            "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -33,8 +28,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "scripts": []
+            ]
           },
           "configurations": {
             "production": {
@@ -61,27 +55,23 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ygo-build:build:production"
+              "buildTarget": "Frontend:build:production"
             },
             "development": {
-              "buildTarget": "ygo-build:build:development"
+              "buildTarget": "Frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n"
+          "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -92,8 +82,7 @@
             ],
             "styles": [
               "src/styles.scss"
-            ],
-            "scripts": []
+            ]
           }
         }
       }
