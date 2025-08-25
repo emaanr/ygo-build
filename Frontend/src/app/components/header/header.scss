@@ -1,0 +1,24 @@
+$gap: 1rem;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: var(--header-height);
+  border-bottom: 1px solid black; // Delete Later
+}
+
+.items {
+  display: flex;
+  gap: $gap;
+
+  ul {
+    display: flex;
+    gap: $gap;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: $gap;
+  }
+}
