@@ -1,7 +1,9 @@
-<p>home works!</p>
-<h1>{{ title() }}</h1>
-<ul>
-  @for (user of users(); track user.id) {
-    <li>{{ user.id }} - {{ user.name }}</li>
-  }
-</ul>
+<div class="home">
+  <p>home works!</p>
+  <h1>{{ title() }}</h1>
+  <ul>
+    @for (user of users(); track user.id) {
+      <li>{{ user.id }} - {{ user.name }}</li>
+    }
+  </ul>
+</div>

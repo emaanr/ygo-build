@@ -7,13 +7,11 @@
       <ul>
         <li><a routerLink="/decks">Decks</a></li>
         <li><a routerLink="/simulate">Simulate</a></li>
-        <li><a routerLink="/api">API</a></li>
+        <li><a routerLink="/about">About</a></li>
       </ul>
     </nav>
-    <div class="buttons">
-      <button class="search">Search</button>
-      <button class="theme">Theme</button>
-      <button class="login">Login</button>
-    </div>
+    <app-theme-toggle/>
+    <button class="btn" (click)="onClick('Search')">Search</button>
+    <button class="btn" (click)="onClick('Login')">Login</button>
   </div>
 </header>

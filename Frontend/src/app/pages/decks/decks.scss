@@ -15,11 +15,11 @@ $gap: 1em;
 
   .deck {
     flex: 0 0 calc(40% - (0.5 * $gap));
-    background-color: cyan; // Delete Later
+    background-color: brown; // TODO: Delete Later
   }
 
   .cards {
     flex: 0 0 calc(60% - (0.5 * $gap));
-    background-color: yellow; // Delete Later
+    background-color: purple; // TODO: Delete Later
   }
 }

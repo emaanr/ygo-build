@@ -3,7 +3,7 @@ import { Home } from './pages/home/home';
 import { Page } from './pages/page/page';
 import { Decks } from './pages/decks/decks';
 import { Simulate } from './pages/simulate/simulate';
-import { Api } from './pages/api/api';
+import { About } from './pages/about/about';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -14,7 +14,7 @@ export const routes: Routes = [
     children: [
       { path: 'decks', component: Decks },
       { path: 'simulate', component: Simulate },
-      { path: 'api', component: Api },
+      { path: 'about', component: About },
     ],
   },
 ];

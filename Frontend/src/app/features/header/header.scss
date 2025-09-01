@@ -3,22 +3,19 @@ $gap: 1rem;
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: var(--header-height);
-  border-bottom: 1px solid black; // Delete Later
+  padding: $gap; // TODO: Temp
+  border-bottom: 1px solid black; // TODO: Delete later
 }
 
 .items {
   display: flex;
   gap: $gap;
+  align-items: center;
 
   ul {
     display: flex;
-    gap: $gap;
-  }
-
-  .buttons {
-    display: flex;
-    justify-content: space-between;
     gap: $gap;
   }
 }

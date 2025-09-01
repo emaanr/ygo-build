@@ -1,12 +1,14 @@
 footer {
-  border-top: 1px solid black; // Delete Later
+  border-top: 1px solid black; // TODO: Delete Later
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: var(--footer-height);
+  padding: 1rem;
 }
 
 .right {
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 1rem;
 }

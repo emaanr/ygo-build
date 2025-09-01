@@ -1,0 +1,80 @@
+@use 'sass:map';
+
+$spell-card-green: #038c7a;
+$trap-card-purple: #a61675;
+$normal-monster-card-gold: #c08d3c;
+
+// TODO: Can rename these later as I realize I need more or less colors
+$colors: (
+  // Light Theme
+  text-light: #000,
+  text-secondary-light: #444,
+  light-1: #f5f3f1,
+  light-2: #f1eeeb,
+  light-3: #ebe6e2,
+  border-light: #fff,
+
+  // Dark Theme
+  text-dark: #fff,
+  text-secondary-dark: #aaa,
+  dark-1: #14191d,
+  dark-2: #0e1114,
+  dark-3: #0a0c0e,
+  border-dark: #000,
+
+  // Shared
+  success: $spell-card-green,
+  warning: $normal-monster-card-gold,
+  error: $trap-card-purple,
+  accent-1-primary: #7d3e12,
+  accent-1-secondary: #570d00,
+  accent-2-primary: #ef5250,
+  accent-2-secondary: #e71b24
+);
+
+$fonts: (
+  family-primary: (system-ui,
+    -apple-system,
+    sans-serif,
+  ),
+  family-mono: ('Monaco',
+    'Cascadia Code',
+    monospace,
+  ),
+  size-sm: 0.875rem,
+  size-base: 1rem,
+  size-lg: 1.125rem,
+);
+
+$layout: (
+  header-height: 50px,
+  footer-height: 100px,
+  border-radius: 3px,
+);
+
+$shadows: (
+  sm-light: 0 1px 2px 0 rgb(0 0 0 / 0.05),
+  sm-dark: 0 1px 2px 0 rgb(0 0 0 / 0.3),
+  md-light: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+  md-dark: 0 4px 6px -1px rgb(0 0 0 / 0.4),
+);
+
+/*** HELPER FUNCTIONS ***
+ * For acccessing values from the maps above
+ ***/
+
+@function color($key) {
+  @return map.get($colors, $key);
+}
+
+@function font($key) {
+  @return map.get($fonts, $key);
+}
+
+@function layout($key) {
+  @return map.get($layout, $key);
+}
+
+@function shadow($key) {
+  @return map.get($shadows, $key);
+}
