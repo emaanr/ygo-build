@@ -14,7 +14,7 @@
 @use 'styles/reset';
 
 :root {
-  color-scheme: light dark;
+  // color-scheme: light dark; // This gets set and handled by ThemeToggle in theme-toggle.ts
 
   // Layout
   --header-height: #{vars.layout(header-height)};
@@ -29,14 +29,14 @@
   --color-3: light-dark(#{vars.color(light-3)}, #{vars.color(dark-3)});
 
   // Accent Color Tokens
-  --color-accent-1-primary: #{vars.color(accent-1-primary)};
-  --color-accent-1-secondary: #{vars.color(accent-1-secondary)};
-  --color-accent-2-primary: #{vars.color(accent-2-primary)};
-  --color-accent-2-secondary: #{vars.color(accent-2-secondary)};
+  --color-accent-brown: #{vars.color(accent-brown)};
+  --color-accent-browner: #{vars.color(accent-browner)};
+  --color-accent-red: #{vars.color(accent-red)};
+  --color-accent-redder: #{vars.color(accent-redder)};
 
   // Accent Color Variables
-  --color-accent-primary: light-dark(var(--color-accent-1-primary), var(--color-accent-2-primary));
-  --color-accent-secondary: light-dark(var(--color-accent-1-secondary), var(--color-accent-2-secondary));
+  --color-accent-primary: light-dark(var(--color-accent-brown), var(--color-accent-red));
+  --color-accent-secondary: light-dark(var(--color-accent-browner), var(--color-accent-redder));
 
   // Feedback
   --color-success: #{vars.color(success)};
@@ -48,12 +48,6 @@
   --font-size-sm: #{vars.font(size-sm)};
   --font-size-base: #{vars.font(size-base)};
   --font-size-lg: #{vars.font(size-lg)};
-
-  // Other
-  --white-black: light-dark(#fff, #121212);
-  --black-white: light-dark(#121212, #fff);
-  --white-black-hover: light-dark(#eee, #000);
-  --black-white-hover: light-dark(#000, #eee);
 }
 
 // Global Styles
@@ -69,10 +63,10 @@ body {
   border: none;
   cursor: pointer;
   background: var(--color-accent-primary);
-  color: var(--black-white);
+  color: #fff;
 
   &:hover {
     background: var(--color-accent-secondary);
-    color: var(--black-white-hover);
+    color: #ddd;
   }
 }
