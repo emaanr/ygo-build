@@ -1,9 +1,35 @@
 <div class="home">
-  <p>home works!</p>
-  <h1>{{ title() }}</h1>
-  <ul>
-    @for (user of users(); track user.id) {
-      <li>{{ user.id }} - {{ user.name }}</li>
-    }
-  </ul>
+  <div class="hero">
+    <div class="container">
+      <div class="lhs">
+        <div class="text-group">
+          <h1>
+            Build Yu-Gi-Oh!
+          </h1>
+          <p>
+            DECKS & SIMULATE THEM
+          </p>
+        </div>
+        <div class="btn-group">
+          <button class="btn">Build</button>
+          <button class="btn">Simulate</button>
+        </div>
+      </div>
+      <div class="rhs">
+        <app-card-stack />
+      </div>
+    </div>
+  </div>
+  <div class="card-carousel">
+    Placeholder
+  </div>
+  <div class="temp">
+    <p>home works!</p>
+    <h1>{{ title() }}</h1>
+    <ul>
+      @for (user of users(); track user.id) {
+        <li>{{ user.id }} - {{ user.name }}</li>
+      }
+    </ul>
+  </div>
 </div>

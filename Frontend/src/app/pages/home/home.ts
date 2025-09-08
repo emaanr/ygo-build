@@ -1,9 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit, signal } from '@angular/core';
+import { CardStack } from '../../features/card-stack/card-stack';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [CardStack],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

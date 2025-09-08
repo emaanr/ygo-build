@@ -10,8 +10,8 @@ export class ThemeToggle implements OnInit {
   private _theme = signal<'light' | 'dark'>('dark'); // Private, Writable, "Setter" or Setting Mechanism
   theme = this._theme.asReadonly(); // Public, Read-Only, "Getter" or Getting Mechanism
 
-  private _lightIcon = 'assets/light.png';
-  private _darkIcon = 'assets/dark.png';
+  private _lightIcon = 'assets/images/light.png';
+  private _darkIcon = 'assets/images/dark.png';
 
   ngOnInit(): void {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

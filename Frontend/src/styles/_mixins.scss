@@ -1,0 +1,43 @@
+// Fonts
+@mixin itc-stone-serif-lt-regular {
+  font-family: 'ITC Stone Serif LT';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin itc-stone-serif-lt-italic {
+  font-family: 'ITC Stone Serif LT';
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin matrix-regular-smallcaps {
+  font-family: 'Matrix';
+  font-weight: 400;
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+@mixin matrix-ii-ot-book {
+  font-family: 'Matrix II OT';
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin matrix-ii-ot-regular {
+  font-family: 'Matrix II OT';
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin matrix-ii-ot-bold {
+  font-family: 'Matrix II OT';
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin matrix-ii-inline-ot-extrabold {
+  font-family: 'Matrix II Inline OT';
+  font-weight: 800;
+  font-style: normal;
+}

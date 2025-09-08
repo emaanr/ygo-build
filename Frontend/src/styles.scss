@@ -11,6 +11,7 @@
 
 @use 'styles/variables' as vars;
 @use 'styles/mixins';
+@use 'styles/fonts';
 @use 'styles/reset';
 
 :root {
@@ -20,7 +21,11 @@
   --header-height: #{vars.layout(header-height)};
   --footer-height: #{vars.layout(footer-height)};
   --page-height: calc(100vh - var(--header-height) - var(--footer-height));
+  --hero-height: calc(100vh - var(--header-height));
   --border-radius: #{vars.layout(border-radius)};
+
+  // Other
+  --logo-size: calc(var(--header-height) - (1/8 * var(--header-height)));
 
   // Colors
   --color-text: light-dark(#{vars.color(text-light)}, #{vars.color(text-dark)});
@@ -42,17 +47,15 @@
   --color-success: #{vars.color(success)};
   --color-warning: #{vars.color(warning)};
   --color-error: #{vars.color(error)};
-
-  // Fonts
-  --font-family: #{vars.font(family-primary)};
-  --font-size-sm: #{vars.font(size-sm)};
-  --font-size-base: #{vars.font(size-base)};
-  --font-size-lg: #{vars.font(size-lg)};
 }
 
 // Global Styles
 body {
-  font-family: var(--font-family);
+  font-family: 'Inter',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
   background: var(--color-2);
   color: var(--color-text);
 }

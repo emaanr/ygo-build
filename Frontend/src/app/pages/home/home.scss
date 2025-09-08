@@ -1,5 +1,114 @@
 .home {
-  min-height: var(--page-height);
   overflow-y: auto;
   width: auto;
+}
+
+.hero {
+  height: var(--hero-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 50%;
+
+    .lhs {
+      display: flex;
+      flex: 3;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 1rem;
+      // background-color: green; // TODO: Delete
+
+      .text-group {
+        h1 {
+          font-size: clamp(2rem, 8rem, 4em);
+        }
+
+        p {
+          color: var(--color-accent-primary);
+          font-size: 1.5em;
+        }
+      }
+
+      .btn-group {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        font-size: 1.5em;
+      }
+    }
+
+    .rhs {
+      display: flex;
+      flex: 1;
+      position: relative;
+      align-items: center;
+      justify-content: flex-start;
+      // background-color: purple; // TODO: Delete
+
+    }
+  }
+}
+
+//   .container {
+//     display: flex;
+//     flex-direction: row;
+//     // TODO: This is your "control box" - resize this to change everything
+//     width: 50%; // TODO: Adjust this to resize everything
+//     // max-width: 600px; // TODO: Set a max width if needed
+//     min-width: 300px; // TODO: Set a min width if needed
+
+//     .lhs {
+//       display: flex;
+//       justify-content: right;
+//       align-items: right;
+//       flex: 0 0 60%;
+//       flex-direction: column;
+//       text-align: center;
+//       gap: 0.5rem;
+
+//       // TODO: For debugging - remove later
+//       background-color: brown; // TODO: Delete Later
+//       border: 2px dashed red;
+
+//       .text-group {
+//         width: 100%;
+
+//         h1 {
+//           color: var(--accent-primary);
+//           font-size: clamp(2rem, 8rem, 4em);
+//         }
+
+//         p {
+//           width: 100%;
+//           font-size: 1.2rem;
+//         }
+//       }
+
+//       .btn-group {
+//         display: flex;
+//         gap: 10px;
+//         font-size: 1.2rem;
+//         justify-content: center;
+//       }
+//     }
+
+//     .rhs {
+//       flex: 0 0 40%;
+//       background-color: purple; // TODO: Delete Later
+//     }
+//   }
+// }
+
+.temp {
+  border-top: 1px solid green; // TODO: Delete later
+}
+
+.card-carousel {
+  border-top: 1px solid green; // TODO: Delete later
+  height: 25vh;
 }

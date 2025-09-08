@@ -32,20 +32,6 @@ $colors: (
   accent-redder: #e71b24
 );
 
-$fonts: (
-  family-primary: (system-ui,
-    -apple-system,
-    sans-serif,
-  ),
-  family-mono: ('Monaco',
-    'Cascadia Code',
-    monospace,
-  ),
-  size-sm: 0.875rem,
-  size-base: 1rem,
-  size-lg: 1.125rem,
-);
-
 $layout: (
   header-height: 50px,
   footer-height: 100px,
@@ -65,10 +51,6 @@ $shadows: (
 
 @function color($key) {
   @return map.get($colors, $key);
-}
-
-@function font($key) {
-  @return map.get($fonts, $key);
 }
 
 @function layout($key) {

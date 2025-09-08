@@ -1,0 +1,61 @@
+// ITC Stone Serif
+@font-face {
+	font-family: 'ITC Stone Serif LT';
+	src: url('/assets/fonts/ITC Stone Serif LT Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'ITC Stone Serif LT';
+	src: url('/assets/fonts/ITC Stone Serif LT Italic.otf') format('opentype');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+// Matrix
+@font-face {
+	font-family: 'Matrix';
+	src: url('/assets/fonts/Matrix Regular SmallCaps.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-variant: small-caps;
+	font-display: swap;
+}
+
+// Matrix II OT
+@font-face {
+	font-family: 'Matrix II OT';
+	src: url('/assets/fonts/Matrix II OT Book.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matrix II OT';
+	src: url('/assets/fonts/Matrix II OT Regular.otf') format('opentype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Matrix II OT';
+	src: url('/assets/fonts/Matrix II OT Bold.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+// Matrix II Inline OT
+@font-face {
+	font-family: 'Matrix II Inline OT';
+	src: url('/assets/fonts/Matrix II Inline OT ExtraBold.otf') format('opentype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}

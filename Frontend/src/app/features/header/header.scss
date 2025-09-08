@@ -1,3 +1,5 @@
+@use '../../../styles/mixins';
+
 $gap: 1rem;
 
 header {
@@ -6,7 +8,7 @@ header {
   align-items: center;
   height: var(--header-height);
   padding: $gap; // TODO: Temp
-  border-bottom: 1px solid black; // TODO: Delete later
+  border-bottom: 1px solid green; // TODO: Delete later
 }
 
 .items {
@@ -18,4 +20,10 @@ header {
     display: flex;
     gap: $gap;
   }
+}
+
+.logo {
+  @include mixins.matrix-ii-inline-ot-extrabold;
+  font-size: var(--logo-size);
+  -webkit-text-stroke: 1px var(--color-accent-primary);
 }

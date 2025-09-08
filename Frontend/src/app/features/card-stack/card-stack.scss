@@ -1,0 +1,27 @@
+.card-stack {
+  position: absolute;
+  width: 200px;
+  transform: rotateX(45deg) rotateZ(30deg) translate(-15px, 30px);
+  transform-origin: bottom left;
+}
+
+.card-stack img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.card-top {
+  z-index: 3;
+  transform: translate(0, 0);
+}
+
+.card-mid {
+  z-index: 2;
+  transform: translate(40px, 40px);
+}
+
+.card-bot {
+  z-index: 1;
+  transform: translate(80px, 80px);
+}
