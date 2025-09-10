@@ -1,32 +1,28 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { ThemeStore } from '../../services/theme-store';
 
 @Component({
   selector: 'app-theme-toggle',
-  imports: [],
   templateUrl: './theme-toggle.html',
   styleUrl: './theme-toggle.scss',
 })
 export class ThemeToggle implements OnInit {
-  private _theme = signal<'light' | 'dark'>('dark'); // Private, Writable, "Setter" or Setting Mechanism
-  theme = this._theme.asReadonly(); // Public, Read-Only, "Getter" or Getting Mechanism
-
-  private _lightIcon = 'assets/images/light.png';
+  private themeStore = inject(ThemeStore);
   private _darkIcon = 'assets/images/dark.png';
+  private _lightIcon = 'assets/images/light.png';
 
-  ngOnInit(): void {
+  ngOnInit() {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const initTheme = prefersDark ? 'dark' : 'light';
-    this._theme.set(initTheme);
-    document.documentElement.style.setProperty('color-scheme', initTheme);
+    this.themeStore.setTheme(initTheme);
   }
 
   themeIcon() {
-    return this.theme() === 'dark' ? this._darkIcon : this._lightIcon;
+    return this.themeStore.theme() === 'dark' ? this._darkIcon : this._lightIcon;
   }
 
   toggleTheme() {
-    const toggledTheme = this.theme() === 'dark' ? 'light' : 'dark';
-    this._theme.set(toggledTheme);
-    document.documentElement.style.setProperty('color-scheme', toggledTheme);
+    const toggledTheme = this.themeStore.theme() === 'dark' ? 'light' : 'dark';
+    this.themeStore.setTheme(toggledTheme);
   }
 }

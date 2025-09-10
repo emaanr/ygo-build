@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ThemeStore } from '../../services/theme-store';
 
 @Component({
   selector: 'app-card-stack',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './card-stack.scss',
 })
 export class CardStack {
-  src = 'assets/images/40908371.jpg';
+  private themeStore = inject(ThemeStore);
+  private _darkCard = 'assets/images/44405066.jpg';
+  private _lightCard = 'assets/images/40908371.jpg';
+
+  src() {
+    return this.themeStore.theme() === 'dark' ? this._darkCard : this._lightCard;
+  }
 }
